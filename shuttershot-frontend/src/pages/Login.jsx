@@ -58,6 +58,12 @@ export default function Login() {
             className="w-full rounded-card border border-border bg-surface px-4 py-3 text-ink placeholder:text-ink-muted focus:border-accent"
           />
 
+          <p className="text-right text-sm">
+            <Link to="/forgot-password" className="text-accent underline">
+              Forgot password?
+            </Link>
+          </p>
+
           {error && <p className="text-sm text-booked">{error}</p>}
 
           <button
