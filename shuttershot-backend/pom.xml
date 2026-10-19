@@ -96,6 +96,13 @@
             <version>1.22.0</version>
         </dependency>
 
+        <!-- Cloudinary for cloud image storage (Replaces local file system) -->
+        <dependency>
+            <groupId>com.cloudinary</groupId>
+            <artifactId>cloudinary-http44</artifactId>
+            <version>1.38.0</version>
+        </dependency>
+
         <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>

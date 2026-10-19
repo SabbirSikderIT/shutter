@@ -108,3 +108,12 @@ sslcommerz:
   store-id: ${SSLCOMMERZ_STORE_ID:}
   store-password: ${SSLCOMMERZ_STORE_PASSWORD:}
   sandbox: ${SSLCOMMERZ_SANDBOX:true}
+
+# ==========================================
+# CLOUDINARY CONFIGURATION (Added for Image Uploads)
+# ==========================================
+cloudinary:
+  cloud_name: ${CLOUDINARY_CLOUD_NAME:fcaagnjo}
+  api_key: ${CLOUDINARY_API_KEY:115864218748876}
+  api_secret: ${CLOUDINARY_API_SECRET:XcB_MCjWIPF5Se1S-wPVAdYJtT4}
+  folder: ${CLOUDINARY_FOLDER:shuttercloud}
