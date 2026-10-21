@@ -37,11 +37,14 @@ public class CorsConfig {
         // machine's LAN IP — not localhost — must be reachable for) hit this API too;
         // these patterns only ever match private, non-routable addresses, so they're
         // safe to leave broad for local development.
+        // 🌟 Vercel ডোমেইনটি এখানে যোগ করা হলো
         configuration.setAllowedOriginPatterns(List.of(
                 "http://localhost:*",
                 "http://192.168.*.*:*",
                 "http://10.*.*.*:*",
-                "http://172.*.*.*:*"));
+                "http://172.*.*.*:*",
+                "https://shuttershot.vercel.app",
+                "https://*.vercel.app"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
