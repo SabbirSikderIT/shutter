@@ -74,6 +74,8 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/api/bookings/*").permitAll()
                         // 🌟 নতুন লাইন: /api/ ছাড়া পাথগুলোর জন্য
                         .requestMatchers(HttpMethod.GET, "/photographers/**", "/orders/delivery-rules").permitAll()
+                        // 🌟 নতুন লাইন: UptimeRobot-এর জন্য Health Check
+                        .requestMatchers("/health").permitAll()
                         .requestMatchers("/api/admin/staff", "/api/admin/staff/**").hasRole("ADMIN")
                         .requestMatchers("/api/admin/**").hasAnyRole("ADMIN", "MODERATOR")
                         .anyRequest().authenticated()
